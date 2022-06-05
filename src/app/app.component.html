@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<br />
+
+<button class="btn btn-danger" style="display: block; margin-left: auto; margin-right: 30%;" (click)="nextPokemones()">Next</button>
+
+<br />
+
+<div class="container ">
+    <div class="row">
+        <div *ngFor="let pokemonId of this.pokemones">    
+            <app-pokemon id="{{pokemonId}}"></app-pokemon>
+        </div>
+    </div>
+</div>
