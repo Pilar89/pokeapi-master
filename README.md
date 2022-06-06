@@ -4,7 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Demo
 
-![](../../PokemonApiDemo1.gif)
+![](PokemonApiDemo1.gif)
+
 
 ## Development server
 
