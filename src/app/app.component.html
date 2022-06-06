@@ -1,15 +1,30 @@
 <app-header></app-header>
+<div class="container">
+    <br />
 
-<br />
+    <div class="row justify-content-center">
+        <button class="btn btn-danger mr-1" (click)="prevPokemones()">Prev</button>
+        <button class="btn btn-danger" (click)="nextPokemones()">Next</button>
+    </div>
 
-<button class="btn btn-danger" style="display: block; margin-left: auto; margin-right: 30%;" (click)="nextPokemones()">Next</button>
 
-<br />
+    <br />
 
-<div class="container ">
-    <div class="row">
-        <div *ngFor="let pokemonId of this.pokemones">    
-            <app-pokemon id="{{pokemonId}}"></app-pokemon>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div *ngFor="let pokemonId of this.pokemones">    
+                <app-pokemon id="{{pokemonId}}"></app-pokemon>
+            </div>
         </div>
     </div>
+    
+    <br />
+
+    <div class="row justify-content-center">
+        <button class="btn btn-danger mr-1" (click)="prevPokemones()">Prev</button>
+        <button class="btn btn-danger" (click)="nextPokemones()">Next</button>
+    </div>
+
 </div>
+
+

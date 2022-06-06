@@ -14,4 +14,8 @@ export class AppComponent {
   nextPokemones() {
     this.pokemones = this.pokemones.map(i => i + 20)
   }
+
+  prevPokemones(){
+    this.pokemones = this.pokemones.map(i =>  i - 20 <= 0 ? i : i - 20)
+  }
 }
