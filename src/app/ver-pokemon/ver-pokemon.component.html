@@ -1,0 +1,16 @@
+<br/>
+<div class="card border border-danger" style="min-width: 50%; align-items: center;">
+
+    <h5 class="card-header text-light  bg-danger align-items-center" style="width: 100%;">
+        <b>{{this.name}}</b>
+    </h5>
+    <img src="{{urlImage}}" alt="Foto pokemon" width="150" *ngIf="urlImage!= 'vacio'">
+    <p class="card-text" *ngIf="urlImage!= 'vacio'">Types: {{this.types}} </p>
+    <p class="card-text" *ngIf="urlImage!= 'vacio'">Height: {{this.height}}</p>
+    <p class="card-text" *ngIf="urlImage!= 'vacio'">Weight: {{this.weight}}</p>
+
+
+</div>
+
+   
+

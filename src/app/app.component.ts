@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { subscribeOn } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+  name!: string;
+  showPokemonsListView: boolean = true;
   pokemones = Array.from(Array(20).keys()).map(i => i + 1)
 
   ngOnInit() {
@@ -17,5 +21,15 @@ export class AppComponent {
 
   prevPokemones(){
     this.pokemones = this.pokemones.map(i =>  i - 20 <= 0 ? i : i - 20)
+  }
+
+  showViewSearch() {
+    console.log({name: this.name})
+    this.showPokemonsListView = false;
+   
+  }
+
+  showViewPokemonsList() {
+    this.showPokemonsListView = true;
   }
 }
